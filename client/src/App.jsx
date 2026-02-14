@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react';
+
+import { Item } from "@/components/ui/item";
+import { CardSmall } from "./Card";
+import { ItemDemo } from "./Submit";
+import { FormRhfInput } from "./Form";
+
 
 function App() {
-  const [message, setMessage] = useState('');
 
-  useEffect(() => {
-    fetch('http://localhost:5000/api/hello')
-      .then(res => res.json())
-      .then(data => setMessage(data.message))
-      .catch(err => console.log(err));
-  }, []);
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '100px' }}>
-      <h1>MERN Stack Hello World</h1>
-      <h2>Backend says: {message || 'Loading...'}</h2>
+ 
+  <div className="flex items-center justify-center min-h-screen bg-background">
+      <ItemDemo />
+      <FormRhfInput />
     </div>
+
   );
 }
 
