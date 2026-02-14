@@ -47,7 +47,7 @@ form h2 {
 }
 
 /* Inputs & textarea */
-input,
+
 textarea {
   padding: 12px;
   border-radius: 40px;
@@ -55,6 +55,16 @@ textarea {
   font-size: 14px;
   transition: 0.3s ease;
   width: auto;
+}
+
+input {
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #e7d7d7;
+  font-size: 14px;
+  transition: 0.3s ease;
+  width: 300px; /* Add px, % or em */
+  height: 25px; /* Optional: adjust height */
 }
 
 /* Focus effect */
@@ -81,9 +91,6 @@ textarea:focus {
   border-color: #4a90e2;
   outline: none;
   box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
-}
-
-.form-row {
 }
 
 .form-group textarea {
